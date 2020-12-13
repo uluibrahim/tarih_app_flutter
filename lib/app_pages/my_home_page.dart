@@ -19,7 +19,7 @@ class MyHomePage extends StatelessWidget {
 
 class Islemler extends StatelessWidget {
   var basliklar = [
-    "Dördüncü Murat",
+    "Beyazıd",
     "Dördüncü Murat",
     "Fatih Sultan",
     "Yavuz Sultan",
@@ -50,7 +50,8 @@ class Islemler extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Fatih(basliklar[index])),
+                MaterialPageRoute(
+                    builder: (context) => Fatih(basliklar[index])),
               );
             },
           ),
