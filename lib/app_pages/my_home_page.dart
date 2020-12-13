@@ -34,7 +34,7 @@ class Islemler extends StatelessWidget {
           thickness: 1,
         );
       },
-      itemCount: 3,
+      itemCount: basliklar.length,
       itemBuilder: (context, index) {
         return Card(
           child: ListTile(
@@ -57,6 +57,7 @@ class Islemler extends StatelessWidget {
     basliklar.add("Dördüncü Murat");
     basliklar.add("Fatih Sultan Mehmet");
     basliklar.add("Yavuz Sultan Selim");
+    basliklar.add("Genç Osman");
   }
 
   void onBilgiGetir() {
@@ -64,6 +65,8 @@ class Islemler extends StatelessWidget {
         "27 Temmuz 1612, İstanbul - 8 Şubat 1640, İstanbul\n96. İslam Halifesi\nBağdat Fatihi");
     onBilgi.add(
         "27 Temmuz 1612, İstanbul - 8 Şubat 1640, İstanbul\Nİstanbulun fatihi");
+    onBilgi.add(
+        "10 Ekim 1470 – 22 Eylül 1520\n9. Osmanlı padişahı ve 88. İslam halifesidir. ");
     onBilgi.add(
         "10 Ekim 1470 – 22 Eylül 1520\n9. Osmanlı padişahı ve 88. İslam halifesidir. ");
   }
