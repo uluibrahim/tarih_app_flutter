@@ -28,6 +28,7 @@ class Islemler extends StatelessWidget {
     "2.murat",
     "Abdülhamit",
     "Yıldırım"
+    "ibrahim halil ulu"
   ];
 
   @override
