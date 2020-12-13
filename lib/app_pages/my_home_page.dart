@@ -18,13 +18,19 @@ class MyHomePage extends StatelessWidget {
 }
 
 class Islemler extends StatelessWidget {
-  var basliklar = List();
-  var onBilgi = List();
+  var basliklar = [
+    "Dördüncü Murat",
+    "Dördüncü Murat",
+    "Fatih Sultan",
+    "Yavuz Sultan",
+    "Genç Osman",
+    "Kanuni sultan",
+    "2.murat",
+    "Abdülhamit"
+  ];
+
   @override
   Widget build(BuildContext context) {
-    onBilgiGetir();
-    baslikGetir();
-
     return ListView.separated(
       separatorBuilder: (context, index) {
         return Divider(
@@ -39,35 +45,17 @@ class Islemler extends StatelessWidget {
         return Card(
           child: ListTile(
             leading: Image(image: AssetImage("assets/images/murat.jpg")),
-            subtitle: Text("${onBilgi[index]}"),
+            subtitle: Text("${basliklar[index]}"),
             title: Text("${basliklar[index]}"),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Fatih()),
+                MaterialPageRoute(builder: (context) => Fatih(basliklar[index])),
               );
             },
           ),
         );
       },
     );
-  }
-
-  void baslikGetir() {
-    basliklar.add("Dördüncü Murat");
-    basliklar.add("Fatih Sultan Mehmet");
-    basliklar.add("Yavuz Sultan Selim");
-    basliklar.add("Genç Osman");
-  }
-
-  void onBilgiGetir() {
-    onBilgi.add(
-        "27 Temmuz 1612, İstanbul - 8 Şubat 1640, İstanbul\n96. İslam Halifesi\nBağdat Fatihi");
-    onBilgi.add(
-        "27 Temmuz 1612, İstanbul - 8 Şubat 1640, İstanbul\Nİstanbulun fatihi");
-    onBilgi.add(
-        "10 Ekim 1470 – 22 Eylül 1520\n9. Osmanlı padişahı ve 88. İslam halifesidir. ");
-    onBilgi.add(
-        "10 Ekim 1470 – 22 Eylül 1520\n9. Osmanlı padişahı ve 88. İslam halifesidir. ");
   }
 }

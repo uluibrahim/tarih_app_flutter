@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Fatih extends StatelessWidget {
+  String isim;
+  Fatih(isim) {
+    this.isim=isim;
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +24,7 @@ class Fatih extends StatelessWidget {
               color: Colors.blue,
             )),
         body: Container(
-          child: Text("Fatih Sultan Mehmet"),
+          child: Text(this.isim),
         ),
       ),
     );
