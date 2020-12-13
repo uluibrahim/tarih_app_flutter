@@ -26,7 +26,8 @@ class Islemler extends StatelessWidget {
     "Genç Osman",
     "Kanuni sultan",
     "2.murat",
-    "Abdülhamit"
+    "Abdülhamit",
+    "Yıldırım"
   ];
 
   @override
